@@ -1,15 +1,13 @@
-import {Container, Col, Row, Stack, Navbar, Nav} from 'react-bootstrap';
+import {Container, Col, Row, Navbar, Nav} from 'react-bootstrap';
 
 export function Main() {
     return (
         <Container fluid>
             <Row>
                 <Col lg={2}>
-
                     <Navbar>
                         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     </Navbar>
-
                     <div className="bg-light border">
                         <Nav defaultActiveKey="/home" className="flex-column">
                             <Nav.Link href="/home">Active</Nav.Link>
@@ -30,8 +28,7 @@ export function Main() {
                             <Navbar.Text>运维</Navbar.Text>
                         </Container>
                     </Navbar>
-
-                    <div className="bg-light border">Body</div>
+                    <div className="bg-light border h-100" >Body</div>
                 </Col>
             </Row>
         </Container>
