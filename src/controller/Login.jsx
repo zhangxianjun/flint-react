@@ -1,4 +1,4 @@
-import {Button, Col, Container, Row, Form} from "react-bootstrap";
+import {Button, Col, Container, Row, Form, Stack} from "react-bootstrap";
 
 export function Login(props) {
 
@@ -7,24 +7,17 @@ export function Login(props) {
     }
 
     return (
-        <Container className='p-5 bg-light rounded-3 justify-content-md-center'>
-            <Row>
-                <Col>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control size="sm" type="email" placeholder="请输入账号"/>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Control size="sm" type="password" placeholder="请输入密码"/>
-                        </Form.Group>
-                    </Form>
-                </Col>
-            </Row>
-            <Row>
-                <Col xs lg={2}>
-                    <Button variant="primary" onClick={login}>登录</Button>
-                </Col>
-            </Row>
-        </Container>
+        <Stack gap={2} className="col-md-3 mx-auto">
+            <Form>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control size="sm" type="email" placeholder="请输入账号"/>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Control size="sm" type="password" placeholder="请输入密码"/>
+                </Form.Group>
+            </Form>
+            <Button variant="primary" size="sm" onClick={login}>登录</Button>
+        </Stack>
+
     );
 }
