@@ -7,9 +7,9 @@ export function Login(props) {
     }
 
     return (
-        <Stack gap={2} className="col-md-3 mx-auto">
+        <Stack gap={2} className="col-lg-2 m-lg-auto">
             <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="my-3" controlId="formBasicEmail">
                     <Form.Control size="sm" type="email" placeholder="请输入账号"/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
