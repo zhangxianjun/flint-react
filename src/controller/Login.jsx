@@ -13,10 +13,10 @@ export function Login(props) {
                     <Card className="col-xl-3 bg-light mx-xl-auto border-0">
                         <Form className="col-xl-10 mx-xl-auto mt-xl-4 text-center">
                             <Form.Label className="mb-xl-3">Flint Admin</Form.Label>
-                            <Form.Control className="mb-xl-3" size="sm" type="email" placeholder="请输入账号"/>
-                            <Form.Control className="mb-xl-3" size="sm" type="password" placeholder="请输入密码"/>
+                            <Form.Control className="mb-xl-3" type="email" placeholder="请输入账号"/>
+                            <Form.Control className="mb-xl-3" type="password" placeholder="请输入密码"/>
                         </Form>
-                        <Button className="col-xl-10 mb-xl-4 mx-xl-auto" variant="primary" size="sm" onClick={login}>登录</Button>
+                        <Button className="col-xl-10 mb-xl-4 mx-xl-auto" variant="primary" onClick={login}>登录</Button>
                     </Card>
                 </Col>
             </Row>
