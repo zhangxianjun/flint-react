@@ -10,9 +10,9 @@ export function Login(props) {
         <Container className="vw-100 vh-100">
             <Row className="h-100">
                 <Col className="align-self-center">
-                    <Card className="col-xl-3 bg-light mx-xl-auto">
-                        <Form className="col-xl-10 mx-xl-auto mt-xl-4">
-                            <Form.Label className="mb-xl-3 ">Flint Admin</Form.Label>
+                    <Card className="col-xl-3 bg-light mx-xl-auto border-0">
+                        <Form className="col-xl-10 mx-xl-auto mt-xl-4 text-center">
+                            <Form.Label className="mb-xl-3">Flint Admin</Form.Label>
                             <Form.Control className="mb-xl-3" size="sm" type="email" placeholder="请输入账号"/>
                             <Form.Control className="mb-xl-3" size="sm" type="password" placeholder="请输入密码"/>
                         </Form>
