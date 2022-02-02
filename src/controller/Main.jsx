@@ -4,20 +4,15 @@ export function Main() {
     return (
         <Container fluid>
             <Row>
-                <Col lg={2} className="p-xl-0">
+                <Col lg={2} className="p-xl-0 vh-100">
                     <Navbar bg="dark" variant="dark">
-                        <Navbar.Brand className="w-100 text-center" href="#home">React-Bootstrap</Navbar.Brand>
+                        <Navbar.Brand className="w-100 text-center" href="/">Flint-Admin</Navbar.Brand>
                     </Navbar>
-                    <Nav variant="pills" defaultActiveKey="/home" className="flex-column">
-                        <Nav.Link href="/home">Active</Nav.Link>
-                        <Nav.Link eventKey="link-1">Link</Nav.Link>
-                        <Nav.Link eventKey="link-2">Link</Nav.Link>
-                        <Nav.Link eventKey="disabled" disabled>
-                            Disabled
-                        </Nav.Link>
+                    <Nav variant="pills border-end" defaultActiveKey="/home" className="flex-column">
+                        <Nav.Link href="/home">今日事项</Nav.Link>
                     </Nav>
                 </Col>
-                <Col lg={10} className="p-xl-0">
+                <Col lg={10} className="p-xl-0 vh-100">
                     <Navbar bg="dark" variant="dark">
                         <Container>
                             <Nav className="me-auto">
@@ -27,7 +22,7 @@ export function Main() {
                             </Nav>
                         </Container>
                     </Navbar>
-                    <div className="bg-light border h-100">Body</div>
+                    <div className="bg-light">Body</div>
                 </Col>
             </Row>
         </Container>
