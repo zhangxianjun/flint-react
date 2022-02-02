@@ -4,31 +4,30 @@ export function Main() {
     return (
         <Container fluid>
             <Row>
-                <Col lg={2}>
-                    <Navbar>
-                        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Col lg={2} className="p-xl-0">
+                    <Navbar bg="dark" variant="dark">
+                        <Navbar.Brand className="w-100 text-center" href="#home">React-Bootstrap</Navbar.Brand>
                     </Navbar>
-                    <div className="bg-light border">
-                        <Nav defaultActiveKey="/home" className="flex-column">
-                            <Nav.Link href="/home">Active</Nav.Link>
-                            <Nav.Link eventKey="link-1">Link</Nav.Link>
-                            <Nav.Link eventKey="link-2">Link</Nav.Link>
-                            <Nav.Link eventKey="disabled" disabled>
-                                Disabled
-                            </Nav.Link>
-                        </Nav>
-                    </div>
+                    <Nav variant="pills" defaultActiveKey="/home" className="flex-column">
+                        <Nav.Link href="/home">Active</Nav.Link>
+                        <Nav.Link eventKey="link-1">Link</Nav.Link>
+                        <Nav.Link eventKey="link-2">Link</Nav.Link>
+                        <Nav.Link eventKey="disabled" disabled>
+                            Disabled
+                        </Nav.Link>
+                    </Nav>
                 </Col>
-                <Col lg={10}>
-                    <Navbar bg="light" expand="lg">
+                <Col lg={10} className="p-xl-0">
+                    <Navbar bg="dark" variant="dark">
                         <Container>
-                            <Navbar.Text>产品</Navbar.Text>
-                            <Navbar.Text>开发</Navbar.Text>
-                            <Navbar.Text>测试</Navbar.Text>
-                            <Navbar.Text>运维</Navbar.Text>
+                            <Nav className="me-auto">
+                                <Nav.Link href="#home">今日待办</Nav.Link>
+                                <Nav.Link href="#features">产品环节</Nav.Link>
+                                <Nav.Link href="#pricing">开发环节</Nav.Link>
+                            </Nav>
                         </Container>
                     </Navbar>
-                    <div className="bg-light border h-100" >Body</div>
+                    <div className="bg-light border h-100">Body</div>
                 </Col>
             </Row>
         </Container>
